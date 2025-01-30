@@ -1,0 +1,322 @@
+html{
+    scroll-behavior: smooth;
+}
+body {
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    margin-top: 0px;
+    margin-left: 0px;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    color: white;
+  }
+  
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+        color: white;
+    }
+
+    .header {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .previewimg {
+        height: 150px;
+    }
+
+    #navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #navbar a {
+        font-size: 20px;
+        padding: 10px;
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .one, .two, .three {
+        font-size: 30px;
+    }
+
+    #about-me, #projects, #Contact-Me {
+        margin: 50px 15px;
+        padding: 5px;
+    }
+
+    .project-tile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .findmeon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sm {
+        height: 40px;
+    }
+}
+
+.cedarville-cursive-regular {
+    font-family: "Cedarville Cursive", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  
+.outfit-f1 {
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+  
+
+h1{
+    font-family: "outfit";
+
+}
+
+p {
+    font-family: "outfit";
+    font-size: 20px;
+
+}
+
+.previewimg{
+    height: 200px;
+}
+
+a{
+    text-decoration: none;
+    font-family: "outfit";
+}
+
+#navbar{
+    background: linear-gradient(to right, #080d1f, #292e6b);
+    box-shadow: 0 0 10px #00ffcc;    
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+}
+
+#navbar a{
+    color: #dcdcdc;
+    display: inline-block;
+    font-size: 30px;
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 100%;
+    border-right: 3px solid black;
+    margin: 0 0;
+}
+
+.last{
+    border: 0;
+}
+
+#navbar a:hover{
+    color: #00eaff;
+    text-shadow: 0 0 10px #00eaff, 0 0 20px #00eaff, 0 0 40px #00eaff;
+    transition-duration: 0.5s;
+}
+
+.Hello{
+    border-left: 3px solid black;
+}
+
+.links{
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+#welcome-section{
+    margin-top: 105px;
+    height: 100vh;
+}
+
+.one{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 140px;
+    font-size: 50px;
+    animation-name: slidefromright;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+.two{
+    position: absolute;
+    font-size: 140px;
+    white-space: nowrap;
+    top: 40%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%);
+    animation-name: fadein;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.three{
+    position: absolute;
+    font-size: 50px;
+    top: 360px;
+    left: 3000px;
+    transform: translateX(-50%);
+    animation-name: slidefromleft;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slidefromright{
+    0%{
+        position: absolute;
+        left: -500px;
+        top: 320px;
+    }
+    100%{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 320px;
+    }
+}
+
+@keyframes slidefromleft{
+    0%{
+        position: absolute;
+        top: 520px;
+        left: 2000px;
+        white-space: nowrap;
+    }
+    100%{
+        position: absolute;
+        top: 520px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+    }
+}
+
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+h1 {
+    font-size: 50px
+}
+
+#about-me{
+    margin: 100px 30px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.header{
+    width: fit-content;
+    margin: 5px auto;
+    display: block;
+    font-size: 50px;
+    color: silver !important;
+    background-color: rgba(0,0,0,0) !important;
+}
+
+
+#about-me h2{
+    color: white;
+    width: fit-content;
+    display: block;
+    margin: 5px auto;
+}
+
+#about-me p{
+    line-height: 30px;
+    color: #b19cd9;
+}
+
+#projects{
+    margin: 100px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#projects h3{
+    line-height: 30px;
+    color: #b19cd9;
+}
+
+.project-tile{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-tile a{
+    color: #20c997;
+    text-align: center;
+    border: 2px solid gold;
+    padding: 5px;
+}
+
+#Contact-Me{
+    margin: 100px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.findmeon{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sm{
+    height: 50px;
+    width: auto;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+}
